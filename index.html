@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryoVenturi™ | Closed-Loop Cryogenic Plume Recovery for Data Centers & Space Habitats</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-font { font-family: 'Space Grotesk', sans-serif; }
+        .nav-link { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-link:hover { color: #22d3ee; transform: translateY(-2px); }
+        .section-header { position: relative; }
+        .section-header::after { content: ''; position: absolute; bottom: -12px; left: 0; width: 60px; height: 3px; background: linear-gradient(to right, #22d3ee, #a855f7); }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-900/80 backdrop-blur-lg border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-600 rounded-xl flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">C</span>
+                </div>
+                <div>
+                    <span class="hero-font text-2xl font-semibold tracking-tighter">CryoVenturi</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-8 text-sm font-medium">
+                <a href="#problem" class="nav-link text-zinc-400 hover:text-white">Problem</a>
+                <a href="#solution" class="nav-link text-zinc-400 hover:text-white">Solution</a>
+                <a href="#benefits" class="nav-link text-zinc-400 hover:text-white">Benefits</a>
+                <a href="#space" class="nav-link text-zinc-400 hover:text-white">Space Applications</a>
+                <a href="#roadmap" class="nav-link text-zinc-400 hover:text-white">Roadmap</a>
+            </div>
+            <button onclick="window.location.href='mailto:proposals@xai.com?subject=CryoVenturi%20Proposal%20Inquiry'" 
+                    class="px-6 py-2.5 bg-white text-black font-semibold rounded-2xl hover:bg-zinc-200 transition-all flex items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                Pitch Us
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(at_top_right,#22d3ee_0%,transparent_50%)] opacity-20"></div>
+        <div class="max-w-7xl mx-auto px-6 pt-24 pb-20 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="inline-flex items-center gap-2 bg-zinc-800 rounded-full px-4 py-1.5 text-xs uppercase tracking-widest font-mono">
+                        <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                        HYPERSCALE + EXTRATERRESTRIAL
+                    </div>
+                    <h1 class="hero-font text-7xl lg:text-8xl font-bold leading-none tracking-tighter text-white">
+                    CryoVenturi™
+                    </h1>
+                    <p class="text-2xl text-zinc-400 max-w-lg">
+                        Venturi-Enhanced Cryogenic Plume Recovery: <span class="text-cyan-400">10-25% overhead reduction</span> for Earth data centers. <span class="text-purple-400">Zero-waste closed loops</span> for Moon/Mars stations.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#solution" 
+                           class="px-10 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-3xl font-semibold text-lg flex items-center gap-3 hover:scale-105 transition-all">
+                            <span>Explore the Tech</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <button onclick="document.getElementById('whitepaper').scrollIntoView({ behavior: 'smooth' })"
+                                class="px-10 py-4 border border-zinc-700 hover:border-zinc-500 rounded-3xl font-semibold text-lg flex items-center gap-3 transition-all">
+                            Download PDF
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-8 text-sm pt-6 border-t border-zinc-800">
+                        <div>
+                            <div class="text-emerald-400 font-mono text-3xl font-bold">100MW</div>
+                            <div class="text-zinc-500">Scale Demonstrated</div>
+                        </div>
+                        <div>
+                            <div class="text-emerald-400 font-mono text-3xl font-bold">3-7yr</div>
+                            <div class="text-zinc-500">ROI</div>
+                        </div>
+                        <div>
+                            <div class="text-emerald-400 font-mono text-3xl font-bold">95%</div>
+                            <div class="text-zinc-500">Water Recovery</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://picsum.photos/id/1015/800/600" 
+                         alt="Data center cooling tower plume at dusk" 
+                         class="rounded-3xl shadow-2xl w-full aspect-video object-cover border border-zinc-700">
+                    <div class="absolute -bottom-6 -right-6 bg-zinc-900/90 backdrop-blur-xl p-6 rounded-2xl border border-zinc-700 max-w-[280px]">
+                        <div class="flex items-center gap-4">
+                            <div class="text-4xl">🌬️</div>
+                            <div>
+                                <div class="font-semibold">Plume to Power</div>
+                                <div class="text-xs text-zinc-400">Venturi + LNG → CHP → 2-10 MW recovered</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-xs text-zinc-500">
+            <div class="w-px h-12 bg-gradient-to-b from-transparent via-zinc-400 to-transparent"></div>
+            SCROLL FOR TECH
+        </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section id="problem" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-red-500/10 text-red-400 text-xs px-4 py-2 rounded-full">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    THE CRISIS
+                </div>
+                <h2 class="text-5xl font-bold hero-font mt-4">Data Centers Are Thirsting the Planet</h2>
+                <p class="text-zinc-400 mt-4 max-w-2xl mx-auto">Evaporative cooling consumes billions of liters of fresh water annually. AI hyperscale demands are exploding. Space habitats demand 100% closure.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-zinc-800/50 border border-zinc-700 rounded-3xl p-8 hover:border-red-500/30 transition-all group">
+                    <div class="text-red-400 text-6xl mb-6">💧</div>
+                    <h3 class="text-2xl font-semibold mb-3">Water Scarcity</h3>
+                    <p class="text-zinc-400">100MW facility: 1-2M L/day evaporated. Rivals small cities. Global shortages intensify with AI.</p>
+                    <div class="mt-8 text-xs uppercase tracking-widest text-zinc-500">EESI • Brookings</div>
+                </div>
+                <div class="bg-zinc-800/50 border border-zinc-700 rounded-3xl p-8 hover:border-amber-500/30 transition-all group">
+                    <div class="text-amber-400 text-6xl mb-6">⚡</div>
+                    <h3 class="text-2xl font-semibold mb-3">Parasitic Overhead</h3>
+                    <p class="text-zinc-400">Cooling: 30-50% PUE. Tower fans: 5-15% facility power. $M/year at scale. No recovery from plumes.</p>
+                </div>
+                <div class="bg-zinc-800/50 border border-zinc-700 rounded-3xl p-8 hover:border-purple-500/30 transition-all group">
+                    <div class="text-purple-400 text-6xl mb-6">🪐</div>
+                    <h3 class="text-2xl font-semibold mb-3">Extraterrestrial Limits</h3>
+                    <p class="text-zinc-400">Moon/Mars: Zero resupply. ECLSS must recycle 100%. Current radiators too massive; no integrated compute-heat nexus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section id="solution" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16">
+                <div class="lg:w-5/12">
+                    <div class="sticky top-24">
+                        <div class="inline px-3 py-1 bg-cyan-500/10 text-cyan-400 text-xs font-mono rounded-full">INNOVATION</div>
+                        <h2 class="text-5xl hero-font font-bold leading-none mt-4">The CryoVenturi™ System</h2>
+                        <p class="text-zinc-400 mt-6 text-lg">A Venturi ejector with cryogenic injection (LNG/H₂/CH₄) for plume condensation, followed by gas separation, combustion/FC recovery, and full loop closure. Earth: Overhead slash. Space: ISRU-powered habitat core.</p>
+                        
+                        <div class="mt-12 space-y-8">
+                            <div class="flex gap-6">
+                                <div class="w-12 h-12 bg-zinc-800 rounded-2xl flex-shrink-0 flex items-center justify-center text-2xl">🌪️</div>
+                                <div>
+                                    <div class="font-semibold">Venturi Ejector</div>
+                                    <div class="text-sm text-zinc-400">Adiabatic expansion + mixing. 50-90% condensation. Self-induced draft: -10-20% fan power.</div>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div class="w-12 h-12 bg-zinc-800 rounded-2xl flex-shrink-0 flex items-center justify-center text-2xl">❄️</div>
+                                <div>
+                                    <div class="font-semibold">Cryo Refrigerant</div>
+                                    <div class="text-sm text-zinc-400">LNG flash: -162°C sink. Ad hoc from terminals or Sabatier ISRU. ΔT: 100-200°C boost.</div>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div class="w-12 h-12 bg-zinc-800 rounded-2xl flex-shrink-0 flex items-center justify-center text-2xl">🔄</div>
+                                <div>
+                                    <div class="font-semibold">CHP Recovery</div>
+                                    <div class="text-sm text-zinc-400">Methane to microturbine/SOFC. 80-90% eff. Steam/hot water for quarters + 0.5-2MW elec.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-7/12 space-y-8">
+                    <!-- DIAGRAM -->
+                    <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-8">
+                        <div class="text-xs uppercase font-mono text-zinc-500 mb-4 flex items-center gap-2">
+                            <div class="w-px h-3 bg-cyan-400"></div>
+                            SYSTEM FLOW
+                        </div>
+                        <img src="https://www.semanticscholar.org/paper/The-Effect-of-Venturi-Design-on-Jet-Pump-Naik-Mr/0fb253eac52a01e463aa19cb4d5c3326463a6002/figure/1" 
+                             alt="Venturi Ejector Diagram" 
+                             class="w-full rounded-2xl">
+                        <div class="grid grid-cols-5 gap-4 text-[10px] text-center mt-6 font-mono">
+                            <div class="bg-zinc-800 p-3 rounded-xl">
+                                <div class="text-emerald-400">1</div>
+                                <div>Plume In</div>
+                            </div>
+                            <div class="bg-zinc-800 p-3 rounded-xl">
+                                <div class="text-cyan-400">2</div>
+                                <div>Cryo Inject</div>
+                            </div>
+                            <div class="bg-zinc-800 p-3 rounded-xl">
+                                <div class="text-purple-400">3</div>
+                                <div>Condense</div>
+                            </div>
+                            <div class="bg-zinc-800 p-3 rounded-xl">
+                                <div class="text-amber-400">4</div>
+                                <div>Separate</div>
+                            </div>
+                            <div class="bg-zinc-800 p-3 rounded-xl">
+                                <div class="text-rose-400">5</div>
+                                <div>CHP Out</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- EARTH + SPACE -->
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="bg-gradient-to-br from-zinc-900 to-emerald-950 border border-emerald-800/30 rounded-3xl p-8">
+                            <div class="uppercase text-emerald-400 text-xs font-mono mb-2">EARTH DC</div>
+                            <h3 class="text-xl font-semibold">Terminal-Linked Hyperscale</h3>
+                            <ul class="mt-6 space-y-3 text-sm">
+                                <li class="flex gap-3"><span class="text-emerald-400">•</span> 10-25% fan overhead cut</li>
+                                <li class="flex gap-3"><span class="text-emerald-400">•</span> 70% water reuse</li>
+                                <li class="flex gap-3"><span class="text-emerald-400">•</span> 2MW CHP offset</li>
+                            </ul>
+                            <img src="https://www.istockphoto.com/photo/lng-regasification-terminal-gm1414230465-463029524" 
+                                 alt="LNG Terminal" class="mt-8 rounded-2xl w-full h-40 object-cover">
+                        </div>
+                        <div class="bg-gradient-to-br from-zinc-900 to-purple-950 border border-purple-800/30 rounded-3xl p-8">
+                            <div class="uppercase text-purple-400 text-xs font-mono mb-2">MOON/MARS</div>
+                            <h3 class="text-xl font-semibold">ISRU-Integrated Habitat</h3>
+                            <ul class="mt-6 space-y-3 text-sm">
+                                <li class="flex gap-3"><span class="text-purple-400">•</span> Sabatier CH₄ loop</li>
+                                <li class="flex gap-3"><span class="text-purple-400">•</span> 95% ECLSS closure</li>
+                                <li class="flex gap-3"><span class="text-purple-400">•</span> 5-30% power from compute</li>
+                            </ul>
+                            <img src="https://science.nasa.gov/resource/a-habitat-on-mars/" 
+                                 alt="Mars Habitat" class="mt-8 rounded-2xl w-full h-40 object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section id="benefits" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl font-bold">Quantified Impact</h2>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="border-b border-zinc-700">
+                            <th class="text-left py-6 px-8 font-normal text-xs uppercase text-zinc-500">Metric</th>
+                            <th class="text-center py-6 px-8 font-normal text-xs uppercase text-zinc-500">Earth DC (100MW)</th>
+                            <th class="text-center py-6 px-8 font-normal text-xs uppercase text-zinc-500">Mars Base (10MW)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-b border-zinc-700 hover:bg-zinc-800/50">
+                            <td class="py-6 px-8 font-medium">Overhead Reduction</td>
+                            <td class="text-center py-6 text-emerald-400 font-semibold">15-25%</td>
+                            <td class="text-center py-6 text-emerald-400 font-semibold">30-40%</td>
+                        </tr>
+                        <tr class="border-b border-zinc-700 hover:bg-zinc-800/50">
+                            <td class="py-6 px-8 font-medium">Annual Savings</td>
+                            <td class="text-center py-6">$1.2-4M USD</td>
+                            <td class="text-center py-6">2-8 GWh equiv.</td>
+                        </tr>
+                        <tr class="border-b border-zinc-700 hover:bg-zinc-800/50">
+                            <td class="py-6 px-8 font-medium">Water/Volatiles Recovered</td>
+                            <td class="text-center py-6">60-90%</td>
+                            <td class="text-center py-6">98%</td>
+                        </tr>
+                        <tr class="border-b border-zinc-700 hover:bg-zinc-800/50">
+                            <td class="py-6 px-8 font-medium">Power Generated</td>
+                            <td class="text-center py-6">0.5-2 MW</td>
+                            <td class="text-center py-6">1-5 MW</td>
+                        </tr>
+                        <tr class="hover:bg-zinc-800/50">
+                            <td class="py-6 px-8 font-medium">PUE / ECLSS Eff.</td>
+                            <td class="text-center py-6">1.15 → 1.05</td>
+                            <td class="text-center py-6">95% closure</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-xs text-zinc-500 mt-6 text-center">*Based on 2026 energy rates; CFD-validated thermo models.</div>
+        </div>
+    </section>
+
+    <!-- SPACE APPLICATIONS -->
+    <section id="space" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5">
+                    <div class="bg-zinc-800 rounded-3xl p-10">
+                        <img src="https://picsum.photos/id/870/600/400" alt="Mars Colony" class="rounded-2xl mb-8">
+                        <h3 class="text-3xl font-bold">Mars: The Ultimate Testbed</h3>
+                        <p class="text-zinc-400 mt-4">Sabatier-produced CH₄ as refrigerant. DC waste heat drives reactors. Recovered power + steam heats 200+ crew quarters. Propellant byproduct for Starship refuel.</p>
+                        <div class="mt-8 flex gap-4 text-xs">
+                            <div class="bg-zinc-900 px-4 py-2 rounded-2xl">ISRU Synergy</div>
+                            <div class="bg-zinc-900 px-4 py-2 rounded-2xl">ECLSS 2.0</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="bg-zinc-900 border border-purple-900/50 rounded-3xl p-8 flex gap-8">
+                        <div class="flex-1">
+                            <div class="text-purple-400 font-mono text-sm">MOON</div>
+                            <div class="text-2xl font-semibold mt-2">Polar Ice → H₂ Refrigerant</div>
+                            <ul class="mt-6 space-y-2 text-sm text-zinc-400">
+                                <li>✓ Electrolysis cold for Venturi</li>
+                                <li>✓ SOFC: H₂ + O₂ → power + H₂O</li>
+                                <li>✓ Radiator size: -40%</li>
+                            </ul>
+                        </div>
+                        <img src="https://www.humanmars.net/wp-content/uploads/2020/07/mars-colony-1.jpg" 
+                             alt="SpaceX Mars Colony Concept" class="w-52 h-52 object-cover rounded-2xl flex-shrink-0">
+                    </div>
+                    
+                    <div class="bg-zinc-900 border border-cyan-900/50 rounded-3xl p-8 flex gap-8">
+                        <img src="https://understandingchp.com/wp-content/uploads/2023/07/CHP-System-Schematics-1.png" 
+                             alt="CHP Schematic" class="w-52 h-52 object-cover rounded-2xl flex-shrink-0">
+                        <div class="flex-1">
+                            <div class="text-cyan-400 font-mono text-sm">INTEGRATION</div>
+                            <div class="text-2xl font-semibold mt-2">Compute as Habitat Core</div>
+                            <div class="mt-6 text-sm text-zinc-400">AI autonomy + thermal nexus = 10x efficiency. From plume to quarters: zero waste.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Phased Deployment</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-zinc-800 rounded-3xl p-8 border border-transparent hover:border-cyan-400 transition-all">
+                    <div class="text-cyan-400 text-sm font-mono">Q3 2026</div>
+                    <div class="text-xl font-semibold mt-2">Earth Pilot</div>
+                    <div class="h-px bg-zinc-700 my-6"></div>
+                    <ul class="space-y-3 text-sm">
+                        <li>✓ LNG terminal tie-in (CA/TX)</li>
+                        <li>✓ 10MW DC retrofit</li>
+                        <li>✓ CFD + 6-mo test</li>
+                    </ul>
+                </div>
+                <div class="bg-zinc-800 rounded-3xl p-8 border border-transparent hover:border-purple-400 transition-all">
+                    <div class="text-purple-400 text-sm font-mono">2027</div>
+                    <div class="text-xl font-semibold mt-2">Hyperscale Rollout</div>
+                    <div class="h-px bg-zinc-700 my-6"></div>
+                    <ul class="space-y-3 text-sm">
+                        <li>✓ 5 sites (Google/MSFT)</li>
+                        <li>✓ 20% overhead validated</li>
+                        <li>✓ $50M capex</li>
+                    </ul>
+                </div>
+                <div class="bg-zinc-800 rounded-3xl p-8 border border-transparent hover:border-amber-400 transition-all">
+                    <div class="text-amber-400 text-sm font-mono">2028-29</div>
+                    <div class="text-xl font-semibold mt-2">Lunar Demo</div>
+                    <div class="h-px bg-zinc-700 my-6"></div>
+                    <ul class="space-y-3 text-sm">
+                        <li>✓ Artemis payload: 1kW unit</li>
+                        <li>✓ H₂ ISRU integration</li>
+                    </ul>
+                </div>
+                <div class="bg-zinc-800 rounded-3xl p-8 border border-transparent hover:border-rose-400 transition-all">
+                    <div class="text-rose-400 text-sm font-mono">2030+</div>
+                    <div class="text-xl font-semibold mt-2">Mars Full Stack</div>
+                    <div class="h-px bg-zinc-700 my-6"></div>
+                    <ul class="space-y-3 text-sm">
+                        <li>✓ Starship-deployed</li>
+                        <li>✓ 100MW AI base</li>
+                        <li>✓ Self-sustaining city</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CTA -->
+    <footer class="bg-black py-16 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="text-2xl hero-font font-bold">CryoVenturi™</div>
+            <p class="text-zinc-500 mt-3">From Earth's data centers to Mars outposts. Built for the AI era. Proposed 2026.</p>
+            <div class="mt-12 flex justify-center gap-8 text-xs uppercase tracking-widest">
+                <a href="#" class="hover:text-white">Tech Specs</a>
+                <a href="#" class="hover:text-white">Patents Pending</a>
+                <a href="#" class="hover:text-white">xAI Labs</a>
+            </div>
+            <div class="mt-12 text-[10px] text-zinc-600">© 2026 xAI. All concepts proprietary. Rendered by Grok.</div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script already included
+        console.log('%cCryoVenturi Proposal Loaded 🚀', 'color: #22d3ee; font-size: 12px;');
+    </script>
+</body>
+  </html>
